@@ -14,17 +14,9 @@ clean: # remove python temp files
 	@find . -name '*.pyc' -delete
 	@find . -name '__pycache__' -delete
 
-test: # run pytest in verbose mode
-	@pytest -vvv
-
 venv: # create a virtual env
 	@python3 -m venv venv
 
-format: # format all files using black
-	@black .
-
-check: # diff changes to be made by black
-	@black --check --diff .
 
 install: # install app dependencies for development
 	@pip install -e . -r requirements/dev.txt
@@ -45,7 +37,7 @@ distributions: # create distribution wheel and zip for PyPI
 	@echo "Use `twine upload dist/*` to upload to PyPI"
 
 docker-image:
-	@docker build -t {{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} .
+	@docker build -t git_demo .
 
 help: # Show this help
 	@egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'

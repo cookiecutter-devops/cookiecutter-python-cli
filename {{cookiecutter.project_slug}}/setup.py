@@ -5,12 +5,11 @@ import setuptools
 with open("README.md", "r") as f:
     long_description = f.read()
 
-requirements = ["click>=8.1.7", "rich>=13.9.4", "rich-click>=1.8.3","simple-term-menu", "requests"]
-
+requirements = ["click>=8.1.7", "rich>=13.9.4", "rich-click>=1.8.3", "simple-term-menu", "requests","pygments>=2.9.0"]
 
 setuptools.setup(
     name="{{cookiecutter.project_slug}}",
-    version="0.0.1",
+    version="{{cookiecutter.version}}",
     author="{{cookiecutter.author_name}}",
     description="{{cookiecutter.description}}",
     packages=setuptools.find_packages(
@@ -28,6 +27,9 @@ setuptools.setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
         "Development Status :: 4 - Beta",
     ],

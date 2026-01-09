@@ -1,5 +1,9 @@
 # Cookiecutter for Python Click CLI :cookie:
 
+[中文](README_zh.md)|[English](README.md)
+
+
+
 ## Comes with:
 
  - [x] Pre-commit hooks

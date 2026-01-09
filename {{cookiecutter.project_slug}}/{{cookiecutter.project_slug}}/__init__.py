@@ -13,8 +13,8 @@ __version__ = "{{cookiecutter.version }}"
 
 logging.basicConfig(
     level="INFO",
-    format="%(message)s",
-    datefmt="[%X]",
+    format='%(asctime)s - %(name)s - "%(pathname)s:%(lineno)d" - %(funcName)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[RichHandler(rich_tracebacks=True)],
 )
 
