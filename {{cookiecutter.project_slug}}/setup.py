@@ -5,13 +5,13 @@ import setuptools
 with open("README.md", "r") as f:
     long_description = f.read()
 
-requirements = ["click", "rich<=7.1.0", "simple-term-menu", "requests"]
+requirements = ["click>=8.1.7", "rich>=13.9.4", "rich-click>=1.8.3","simple-term-menu", "requests"]
 
 
 setuptools.setup(
     name="{{cookiecutter.project_slug}}",
     version="0.0.1",
-    author="{{cookiecutter.author}}",
+    author="{{cookiecutter.author_name}}",
     description="{{cookiecutter.description}}",
     packages=setuptools.find_packages(
         exclude=["dist", "build", "*.egg-info", "tests"]

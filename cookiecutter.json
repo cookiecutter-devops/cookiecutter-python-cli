@@ -1,7 +1,20 @@
 {
-    "project_name": "Awesome CLI",
-    "project_slug": "{{cookiecutter.project_name.strip().lower().replace(' ', '_').replace('-', '_')}}",
-    "cli_command": "yocli",
-    "author": "Yankee Maharjan",
-    "description": "This CLI tool does awesome things."
+  "author_name": "Someone",
+  "author_email": "someone@somewhere.com",
+  "version": "0.1.0",
+  "package_name_long": "Python CLI Boilerplate",
+  "package_name": "{{ cookiecutter.package_name_long.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_slug": "{{cookiecutter.project_name.strip().lower().replace(' ', '_').replace('-', '_')}}",
+  "cli_command": "yocli",
+  "git": "y",
+  "dockerfile": "y",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ],
+  "description": "This CLI tool does awesome things."
 }
