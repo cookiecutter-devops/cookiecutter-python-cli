@@ -20,7 +20,7 @@ $ pip install --user cookiecutter
 Generate your project template using cookiecutter.
 
 ```bash
-$ cookiecutter gh:yankeexe/cookiecutter-python-cli
+$ cookiecutter gh:cookiecutter-devops/cookiecutter-python-cli
 ```
 
 ## Project Setup
