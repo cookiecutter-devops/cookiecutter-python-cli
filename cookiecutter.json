@@ -2,10 +2,11 @@
   "author_name": "Someone",
   "author_email": "someone@somewhere.com",
   "version": "0.1.0",
+  "project_name": "Awesome CLI",
+  "project_slug": "{{cookiecutter.project_name.strip().lower().replace(' ', '_').replace('-', '_')}}",
   "package_name_long": "Python CLI Boilerplate",
   "package_name": "{{ cookiecutter.package_name_long.lower().replace(' ', '_').replace('-', '_') }}",
-  "project_slug": "{{cookiecutter.project_name.strip().lower().replace(' ', '_').replace('-', '_')}}",
-  "cli_command": "yocli",
+  "cli_command": "yooucli-name",
   "git": "y",
   "dockerfile": "y",
   "open_source_license": [

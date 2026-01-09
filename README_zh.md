@@ -9,11 +9,17 @@ $ pip install --user cookiecutter
 
 # Generate your project template using cookiecutter.
 $ cookiecutter gh:cookiecutter-devops/cookiecutter-python-cli
-  [1/5] project_name (Awesome CLI): git-demo
-  [2/5] project_slug (git_demo):
-  [3/5] cli_command (yocli): git_demo
-  [4/5] author (Yankee Maharjan):
-  [5/5] description (This CLI tool does awesome things.):
+  [1/11] author_name (Someone): hjl
+  [2/11] author_email (someone@somewhere.com): 1@1.com
+  [3/11] version (0.1.0):
+  [4/11] package_name_long (Python CLI Boilerplate): git_demo
+  [5/11] package_name (git_demo):
+  [6/11] project_name (Awesome CLI): git-demo
+  [7/11] project_slug (git_demo):
+  [8/11] cli_command (yooucli-name): git_demo
+  [9/11] git (y):
+  [10/11] dockerfile (y):
+  [11/11] open_source_license (MIT license):
 
 $ cd git-demo
 $ make venv
