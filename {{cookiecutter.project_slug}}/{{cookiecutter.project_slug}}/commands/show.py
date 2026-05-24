@@ -4,7 +4,7 @@ Show command for the CLI.
 import click
 from rich.table import Table
 
-from git_demo import console
+from {{cookiecutter.project_slug}} import console
 
 
 @click.command()

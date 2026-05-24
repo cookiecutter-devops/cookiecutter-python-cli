@@ -5,8 +5,8 @@ import click
 from rich.prompt import Prompt
 from rich.table import Table
 
-from git_demo import console
-from git_demo.constants import WELCOME_MESSAGE
+from {{cookiecutter.project_slug}} import console
+from {{cookiecutter.project_slug}}.constants import WELCOME_MESSAGE
 
 
 @click.command()
